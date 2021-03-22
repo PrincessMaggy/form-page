@@ -1,0 +1,140 @@
+Selector
+{
+	property
+}
+header{
+	text-align: center;
+}
+h1{
+	font-size: 2rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+
+
+
+#block::after{
+ content: "";
+ display:block;
+ width:100%;
+ height:100%;
+ position: absolute;
+ background-color:cornsilk;
+ top:0;
+ left:0;
+ opacity:0.8;
+ z-index:0;
+ mix-blend-mode: hue;
+}
+#block{
+ position:relative;
+}
+#block > *{
+ z-index:10;
+ position:relative;
+}
+#block{
+	background:url(flower.jpeg);
+	background:linear-gradient(180deg, rgba(9,9 126, 0.1) 0%, rgba(225,225,235,0.6) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:50em;
+    text-align:center;
+	margin:0;
+	padding: 2em;
+	border:groove 2em cornsilk;
+	color: white;
+}
+form{
+	margin-top: 4em;
+}
+form p:first-child{
+	margin-top: 2em;
+	color: black;
+	font-weight: 700;
+	font-size: 2rem;
+}
+input{
+	margin: 1em;
+	padding: 1.2em;
+}
+input:hover{
+	background-color:gainsboro;
+	color: black;
+	border-color: white;
+}
+button{
+	padding: 1.2em;
+	margin: 1em;
+	width:15.5em;
+	color:white;
+	background-color: grey;
+	border: 0.2em grey outset;
+	border-radius: 5px;
+}
+button:hover{
+	border:none;
+}
+a{
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover{
+	color: deeppink;
+}
+
+
+
+
+footer{
+	background-color: grey;
+	color:white;
+	width:100%;
+	height:1.5em;
+	text-align: center;
+	color:aliceblue;
+  	margin:0;
+	font-style:italic;
+	padding-top:1em;
+}
+
+
+
+
+
+@media(max-width:768px){
+	.details{
+		font-size: 1.2rem;
+	}
+	#block{
+		height: 60em;
+	}
+	footer{
+		height: 4em;
+	}
+	
+}
+
+
+	@media(min-width:768px){
+		h1{
+			font-size: 3rem;
+		}
+		h2{
+			font-size: 2.5rem;
+		}
+		#block{
+			height:45em ;
+		}
+		.details{
+			font-size:1.3rem;
+		}
+		
+    footer{
+ 	height: 3em;
+ }
+}
